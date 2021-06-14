@@ -38,7 +38,7 @@ function Completed(){
 //
 // },[todoslist,credentials]);
   useEffect(()=>{
-    fetch(`http://localhost:4000/todos`,{
+    fetch(`https://servervishnu.herokuapp.com/todos`,{
       method: 'GET',
       headers: {"Content-Type":"application/json",
       Authorization:`Basic ${credentials.userid}:${credentials.password}`
@@ -49,7 +49,7 @@ function Completed(){
 },[]);
   const persist = (newTodo)=>{
     // e.preventDefault();
-    fetch(`http://localhost:4000/todos`,{
+    fetch(`https://servervishnu.herokuapp.com/todos`,{
       method: 'POST',
       headers: {"Content-Type":"application/json",
       Authorization:`Basic ${credentials.userid}:${credentials.password}`
