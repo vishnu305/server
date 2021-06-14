@@ -1,0 +1,18 @@
+<Router>
+<Switch>
+<Route path="/add">
+  <Content>
+    <h3> ADD </h3>
+    <ImageOutlinedIcon className="icon1" onClick={open1}/>
+  </Content>
+
+</Route>
+<Route path="/">
+  <Content>
+    <h3> INBOX </h3>
+    <ImageOutlinedIcon className="icon1" onClick={open1}/>
+  </Content>
+</Route>
+</Switch>
+<Bacmenu openbacmenu={openbacmenu} setopenbacmenu={setopenbacmenu} setbackgroundimage={setbackgroundimage}/>
+</Router>
